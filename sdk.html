@@ -1,53 +1,175 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>SDK</title>
-        <meta charset="windows-1252">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
+<head>
+    <title>SDK</title>
+    <link href="resources/css/sdkstyle.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+</head> 
+<body>
+    <header>
         
-        <p id="pgh">SDK</p>
-        <input type="checkbox" class="chb" onclick="func();"/>Color Red [0]
-        <input type="checkbox" class="chb" onclick="func();"/>Font Size 30px [1]
-        <input type="checkbox" class="chb" onclick="func();"/>Font Weight Bold [2]
+        <br>
+        <br>
+        <div class="hero">
+            <h1>Please toggle the switches corresponding to the given choices</h1>
+                    
+            </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- <div class="container">
+                <label class="switch">	
+                           
+                  <input type="checkbox" class="switch-input" onclick="func();">
+                  <span class="switch-label" data-on="On" data-off="Off"></span>
+                  <span class="switch-handle"></span>
+                </label>
+                <br>
+            
+                <label class="switch">
+                  
+                  <input type="checkbox" class="switch-input" onclick="func();">
+                  <span class="switch-label" data-on="On" data-off="Off"></span>
+                  <span class="switch-handle"></span>
+                </label>
+                <br>
+                <label class="switch">
+                  
+                  <input type="checkbox" class="switch-input" onclick="func();">
+                  <span class="switch-label" data-on="On" data-off="Off"></span>
+                  <span class="switch-handle"></span>
+                </label>
+                <br>
+                <label class="switch">
+                 
+                    <input type="checkbox" class="switch-input" onclick="func();">
+                    <span class="switch-label" data-on="On" data-off="Off"></span>
+                    <span class="switch-handle"></span>
+                  </label>
+              </div>  
+              <br> -->
+              
+            
+            
+    <ul class="main-nav">    
+        <li><a href=""> CHANGE THE HEADER COLOUR</a></li>
+        <label class="switch">	
+                <input type="checkbox" class="switch-input" onclick="func();">
+                <span class="switch-label" data-on="On" data-off="Off"></span>
+                <span class="switch-handle"></span>
+              </label>
+              <br>
+        <br>
+        <br>
+        <br>
+        <li><a href=""> CHANGE THE HEADER FONT SIZE</a></li>
+        <label class="switch">
+                  
+                <input type="checkbox" class="switch-input" onclick="func();">
+                <span class="switch-label" data-on="On" data-off="Off"></span>
+                <span class="switch-handle"></span>
+              </label>
+        <br>
+        <br>
         
-        <script>
+        <br>
+        
+        <br>
+        <li><a href=""> CHANGE THE COLOUR OF COMPLETED TASKS </a></li>
+        <label class="switch">
+                  
+                <input type="checkbox" class="switch-input" onclick="func();">
+                <span class="switch-label" data-on="On" data-off="Off"></span>
+                <span class="switch-handle"></span>
+              </label>
+        <br>
+        <br>
+        
+        <br>
+        <br>
+        <li><a href=""> CHANGE THE COLOUR OF PENDING TASKS </a></li>
+        <label class="switch">
+                 
+                <input type="checkbox" class="switch-input" onclick="func();">
+                <span class="switch-label" data-on="On" data-off="Off"></span>
+                <span class="switch-handle"></span>
+              </label>
+        <br>
+        <br>
+        <br>
+        <br>
+        <li><a href=""> DELETE ALL THE TASKS </a></li>
+        <label class="switch">
+                 
+                <input type="checkbox" class="switch-input" onclick="func();">
+                <span class="switch-label" data-on="On" data-off="Off"></span>
+                <span class="switch-handle"></span>
+              </label>
+        <br>
+        
+    </ul>    
+        
+    </div>
+        
     
-             function func()
-             {
-                 var chb = document.getElementsByClassName('chb');
-                 
-                 if(chb[0].checked)
-                 {
-                     document.getElementById('pgh').style.color = '#F00';
-                 }
-                 if(!chb[0].checked)
-                 {
-                     document.getElementById('pgh').style.color = '#000';
-                 }
-                 
-                 if(chb[1].checked)
-                 {
-                     document.getElementById('pgh').style.fontSize = '30px';
-                 }
-                 if(!chb[1].checked)
-                 {
-                     document.getElementById('pgh').style.fontSize = '1em';
-                 }
-                 
-                 if(chb[2].checked)
-                 {
-                     document.getElementById('pgh').style.fontWeight = 'bold';
-                 }
-                 if(!chb[2].checked)
-                 {
-                     document.getElementById('pgh').style.fontWeight = 'normal';
-                 }
-                 
-             }
     
-        </script>
+    </header>
+
+    <script>
+                
+            function func()
+            {
+                var chb = document.getElementsByClassName('switch-input');
+                
+                if(chb[0].checked)
+                {
+                   localStorage.setItem('a', 'on');
+                }
+                if(!chb[0].checked)
+                {
+                   localStorage.setItem('a', 'off');
+                }
+                
+                if(chb[1].checked)
+                {
+                   localStorage.setItem('b', 'on');
+                }
+                if(!chb[1].checked)
+                {
+                   localStorage.setItem('b', 'off');
+                }
+               
+                
+                if(chb[2].checked)
+                {
+                   localStorage.setItem('c', 'on');
+                }
+                if(!chb[2].checked)
+                {
+                   localStorage.setItem('c', 'off');
+                }
+                if(chb[3].checked)
+                {
+                   localStorage.setItem('d', 'on');
+                }
+                if(!chb[3].checked)
+                {
+                   localStorage.setItem('d', 'off');
+                }
+                if(chb[4].checked)
+                {
+                   localStorage.setItem('e', 'on');
+                }
+                if(!chb[4].checked)
+                {
+                   localStorage.setItem('e', 'off');
+                }
+       }
+      
+       </script>
+      
         
-    </body>
+</body>    
 </html>

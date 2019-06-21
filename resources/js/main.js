@@ -168,7 +168,7 @@ function thirdfuncoff(){
           temp.children[i].style.backgroundColor = '#FFFFFF';
       }
     }
-      if (localStorage.getItem('c')=='off')
+ if (localStorage.getItem('c')=='off')
        thirdfuncoff();
        
 function fourthfuncon(){
@@ -178,7 +178,7 @@ function fourthfuncon(){
       }
     }
        
-      if (localStorage.getItem('d')=='on')
+  if (localStorage.getItem('d')=='on')
         fourthfuncon();
       
 function fourthfuncoff(){
@@ -187,6 +187,15 @@ function fourthfuncoff(){
       temp.children[i].style.backgroundColor = '#FFFFFF';
         }
     }
-        if (localStorage.getItem('d')=='off')
+    if (localStorage.getItem('d')=='off')
           fourthfuncoff();
-      
+          
+          
+function fifthfuncon(){
+          localStorage.removeItem("todoList");
+          }
+             
+   if (localStorage.getItem('e')=='on')
+              fifthfuncon();
+            
+                 
