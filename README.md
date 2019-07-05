@@ -28,6 +28,7 @@ In order to integrate the SDK with any web app, the UI/UX elements of the corres
         <!-- JavaScripts -->
         <script src="resources/js/main.js"></script>
 {Code snippet from index.html showing that every element has a specified ID or class name}
+
 function fourthfuncon(){
       var temp = document.querySelector("#completed")
       for(var i = 0; i < temp.children.length; i++){
@@ -38,7 +39,8 @@ function fourthfuncon(){
   if (localStorage.getItem('d')=='on')
         fourthfuncon();
       
-function fourthfuncoff(){
+      
+  function fourthfuncoff(){
       var temp = document.querySelector("#completed")
       for(var i = 0; i < temp.children.length; i++){
       temp.children[i].style.backgroundColor = '#FFFFFF';
@@ -55,6 +57,7 @@ FURTHER SCOPE OF DEVELOPMENT:
 A more general approach as to configuring all or a lot of common elements at the same time (using the same switch) will be more efficient and practical. So further development can be carried out to make this software development kit more versatile and user friendly. 
 More features can be added by replicating the following snippet and making another variable in the LocalStorage that can be accessed and further configuration of the corresponding UI/UX element is carried out. 
 The snippet to be replicated is as follows:
+
 if(chb[4].checked)
                 {
                    localStorage.setItem('e', 'on');
@@ -65,6 +68,7 @@ if(chb[4].checked)
                 }
 
 Already existing code in sdk.js where variable ‘e’ is declared in the LocalStorage
+
 if(chb[5].checked)
                 {
                    localStorage.setItem('f', 'on');
