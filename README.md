@@ -1,4 +1,4 @@
-Configure the behaviour and appearance of any horizontal web app without needing to release an app update or tinkering with the code.
+This web application is to configure the behaviour and appearance of any horizontal web app without needing to release an app update or tinkering with the code.
  
 This SDK is a tool that lets you change the appearance of your app without requiring users to download an app update. When using this SDK, you can configure the theme or the appearance of the elements of any web application without any impact on the functionality or the performance of the web app.
 
@@ -81,4 +81,3 @@ The code to be replicated when another feature or switch is added to configure a
 
 LIMITATIONS AND SCOPE OF IMPROVEMENT
 The SDK is very specific regarding configuring one feature or one UI/UX element at a time. This is a limitation that the SDK is not generally controlling or configuring the elements and bringing about changes to a collective group of elements i.e. changing the entire theme of the UI or changing the font of all the text in the web application. The SDK has a condition that prior to implementing, all the elements in the web app that have to be configured need to have unique class names or IDs.
-Therefore, improvements can be made in this regard.
