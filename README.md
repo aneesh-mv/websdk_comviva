@@ -56,7 +56,7 @@ The SDK is designed in a way that any number of UI/UX element can be configured.
 FURTHER SCOPE OF DEVELOPMENT:
 A more general approach as to configuring all or a lot of common elements at the same time (using the same switch) will be more efficient and practical. So further development can be carried out to make this software development kit more versatile and user friendly. 
 More features can be added by replicating the following snippet and making another variable in the LocalStorage that can be accessed and further configuration of the corresponding UI/UX element is carried out. 
-The snippet to be replicated is as follows:
+The snippet to be replicated is as follows
 
 if(chb[4].checked)
                 {
@@ -78,6 +78,7 @@ if(chb[5].checked)
                    localStorage.setItem('f', 'off');
                 }
 The code to be replicated when another feature or switch is added to configure an element. Here a new variable ‘f’ is declared in the LocalStorage
+
 
 LIMITATIONS AND SCOPE OF IMPROVEMENT
 The SDK is very specific regarding configuring one feature or one UI/UX element at a time. This is a limitation that the SDK is not generally controlling or configuring the elements and bringing about changes to a collective group of elements i.e. changing the entire theme of the UI or changing the font of all the text in the web application. The SDK has a condition that prior to implementing, all the elements in the web app that have to be configured need to have unique class names or IDs.
