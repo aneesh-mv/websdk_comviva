@@ -1,4 +1,4 @@
-This web application is to configure the behaviour and appearance of any horizontal web app without needing to release an app update or tinkering with the code.
+This web application is to configure the behaviour and appearance of any horizontal web app without needing to release an app update or tinkering with the code.gh
  
 This SDK is a tool that lets you change the appearance of your app without requiring users to download an app update. When using this SDK, you can configure the theme or the appearance of the elements of any web application without any impact on the functionality or the performance of the web app.
 
